@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>CSS3_gallery_buildings</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_colour">cyber crime and security </span></a></h1>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li><a href="intro.html">introduction   </a></li>
+          <li><a href="cyberSecurity.html">cyber security</a></li>
+          <li><a href="history.html">history</a></li>
+		  <li><a href="typesofcybercrime.html">types of cyber crime</a></li>
+		  <li><a href="videos.html">videos</a></li>
+		  <li><a href="summary.html">summary</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/Crime0.jpg" width="600" height="300" alt="gallery_buildings_one" /></li>
+        <li><img src="images/Crime2.jpg" width="600" height="300" alt="gallery_buildings_two" /></li>
+        <li><img src="images/Crime3.jpg" width="600" height="300" alt="gallery_buildings_three" /></li>
+        <li><img src="images/Crime4.jpg" width="600" height="300" alt="gallery_buildings_four" /></li>
+        <li><img src="images/Crime5.jpg" width="600" height="300" alt="gallery_buildings_five" /></li>
+        <li><img src="images/Crime6.jpg" width="600" height="300" alt="gallery_buildings_six" /></li>
+      </ul>
+
+      <div class="w3-row">
+      <div class="w3-third">
+      <div id="sidebar_container"> 
+        
+        <div class="sidebar">
+        <h3> Cyber Crime News</h3>
+          <h5>October 6th</h5>
+          <p>Top 10 cyber crime <br /><a href="#">Read more</a></p>
+        </div>
+      </div>
+    </div>
+
+      <div class="w3-twothird">
+      <div class="content">
+        <h1>Introduction</h1>
+        <p>	The term cyber security is used to refer to the security offered through on-line services to protect your online information.</p>
+        <p>With an increasing amount of people getting connected to Internet, the security threats that cause massive harm are increasing also</p>
+        <p>Cybercrime is an activity done using computers and internet. We can say that it is an unlawful acts wherein the computer either a tool or target or both.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer>
+      <p>All rights reserved.Questions,please contact info ib1007@wildcats.unh.edu
+</p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>CSS3_gallery_buildings</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html"><span class="logo_colour">cyber crime and security </span></a></h1>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li><a href="intro.html">introduction   </a></li>
+          <li><a href="cybersecurity.html">cyber security</a></li>
+          <li><a href="History.html">history</a></li>
+		  <li><a href="typesofcybercrime.html">types of cyber crime</a></li>
+		  <li><a href="videos.html">videos</a></li>
+		  <li><a href="summary.html">summary</a></li>
+      
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/Crime0.jpg" width="600" height="300" alt="gallery_buildings_one" /></li>
+        <li><img src="images/Crime2.jpg" width="600" height="300" alt="gallery_buildings_two" /></li>
+        <li><img src="images/Crime3.jpg" width="600" height="300" alt="gallery_buildings_three" /></li>
+        <li><img src="images/Crime4.jpg" width="600" height="300" alt="gallery_buildings_four" /></li>
+        <li><img src="images/Crime5.jpg" width="600" height="300" alt="gallery_buildings_five" /></li>
+        <li><img src="images/Crime6.jpg" width="600" height="300" alt="gallery_buildings_six" /></li>
+      </ul>
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Latest News</h3>
+          <h5>October 7 2017</h5>
+          <p>Greece to extradite Russian suspect in bitcoin cybercrime<br /><a href="#">Read more</a></p>
+          <h5>October 1st, 2017</h5>
+          <p>Equifax and AXA Singapore become the latest victims of cybercrime<br /><a href="#">Read more</a></p>
+        </div>
+      </div>
+      <div class="content">
+  <div style="text-align:right-side">
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="Cybersecurity1" width="420">
+    <source src="Cybersecurity1.mp4" type="video/mp4">
+    <source src="Cybersecurity1.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var Cybersecurity1 = document.getElementById("Cybersecurity1"); 
+
+function playPause() { 
+    if (Cybersecurity1.paused) 
+        Cybersecurity1.play(); 
+    else 
+        Cybersecurity1.pause(); 
+} 
+
+function makeBig() { 
+    Cybersecurity1.width = 560; 
+} 
+
+function makeSmall() { 
+    Cybersecurity1.width = 320; 
+} 
+
+function makeNormal() { 
+    Cybersecurity1.width = 420; 
+} 
+
+</script> 
+</html>
+<video width="420 height="240" controls>
+  <source src="10CyberSecurityFacts.mp4" type="video/mp4">
+  <source src="10CyberSecurityFacts.ogg" type="video/ogg">
+
+
+<p>All rights reserved.Questions,please contact info basnetkumar4@gmail.com</p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+      $('ul.sf-menu').sooperfish();4
+    });
+  </script>
+</body>
+</html>
